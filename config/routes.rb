@@ -1,5 +1,6 @@
 RustyEngine::Engine.routes.draw do
-  get 'failures/index'
+  
+  get 'recentmessage' => 'recentmessage#index' 
 
   resources :profiles
   root :to => "profiles#index"
